@@ -1,0 +1,26 @@
+body{
+
+    background-image: url(../IMG/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.logo {
+
+     display: flex;
+  align-items: center;
+
+}
+
+a{
+    color: yellow;
+}
+
+@font-face {
+     font-family: 'SA2_Titulo';
+  src: url('../Vipnagorgialla Bd It.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
