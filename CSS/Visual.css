@@ -14,13 +14,43 @@ body{
 
 }
 
+.navhead {
+
+    display: flex;
+  align-items: center;       /* Centra verticalmente la imagen y el texto */
+  justify-content: center;   /* Centra todo el conjunto en la pantalla */
+ 
+}
+
+
 a{
     color: yellow;
+    font-family: 'SA2_Texto';
+}
+
+p{
+    font-family: 'SA2_Texto';
+
+}
+h1{
+    font-family: 'SA2_Texto';
+
+}
+h2{
+    font-family: 'SA2_Texto';
+
 }
 
 @font-face {
      font-family: 'SA2_Titulo';
   src: url('../Vipnagorgialla Bd It.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+     font-family: 'SA2_Texto';
+  src: url('../COMIC.TTF') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
