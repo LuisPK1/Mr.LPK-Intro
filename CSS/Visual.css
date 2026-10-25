@@ -7,11 +7,10 @@ body{
     background-attachment: fixed;
 }
 
+
+
 .logo {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+
     display: flex;
     align-items: center;
         
@@ -20,27 +19,67 @@ body{
 .navhead {
 
     display: flex;
-  align-items: center;       /* Centra verticalmente la imagen y el texto */
-  justify-content: center;   /* Centra todo el conjunto en la pantalla */
- 
+    align-items: center;   
+    justify-content: center;
+    background-color: rgba(7, 141, 224, 0.491);
 }
 
 
-a{
+a, p{
     color: yellow;
     font-family: 'SA2_Texto';
 }
 
-p{
-    font-family: 'SA2_Texto';
-
-}
-h1{
+h1, h2{
     font-family: 'SA2_Titulo';
 
 }
-h2{
-    font-family: 'SA2_Titulo';
+
+.contacto
+{
+    text-align: center;
+    display: flex; 
+    align-items: center; 
+    justify-content:space-evenly;
+    position: relative;
+
+    .contacto__gmail
+    {
+        color: white; 
+        margin-left: 5px; 
+        flex-direction: column;
+        position: relative;
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+    .contacto__outlook
+    {
+        color: white; 
+        margin-right: 5px; 
+        flex-direction: column;
+        position: relative;
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+}
+
+.redes{
+    
+    text-align: center;
+    display: flex; 
+    align-items: center; 
+    justify-content:space-evenly;
+
+    .redes__yt{
+        color: white; 
+        flex-direction: column;
+    }
+
+    .redes__github{
+        color: white; 
+        flex-direction: column;
+    }
+
 
 }
 
@@ -56,4 +95,14 @@ h2{
   src: url('../COMIC.TTF') format('opentype');
   font-weight: normal;
   font-style: normal;
+}
+
+@media (max-width: 600px) /* Esto hace que la pagina se vea mas o menos distinta en celular. Unicamente ha sido usada para quitar el logo principal como una pequeña prueba */
+{
+    body{
+        background-position: 30%;
+    }
+    .logo {
+    display: none;
+    }
 }
