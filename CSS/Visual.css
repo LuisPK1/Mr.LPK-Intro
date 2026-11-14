@@ -168,6 +168,7 @@ header {
 .formulario{
     text-align: center;
     position: relative;
+    justify-content: center;
 
     label{
         color: white;
