@@ -130,6 +130,13 @@ header {
     opacity: 1;
 }
 
+.Mini-Titulo{
+
+    color: rgb(117, 239, 255);
+    text-shadow: 2px 2px 2px black ;
+    margin-left: 10px;
+}
+
 .contacto
 {
     text-align: center;
@@ -155,6 +162,16 @@ header {
         position: relative;
         word-break: break-word;
         overflow-wrap: break-word;
+    }
+}
+
+.formulario{
+    text-align: center;
+    position: relative;
+
+    label{
+        color: white;
+        font-family: 'SA2_Texto';
     }
 }
 
@@ -209,7 +226,7 @@ p{
     font-family: 'SA2_Texto';
 }
 
-h1, h2{
+h1, h2, h4{
     font-family: 'SA2_Titulo';
 }
 
