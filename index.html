@@ -12,20 +12,21 @@
     </head>
 
 <body>
-        <!-- a -->
-            
-        <div class="logo">
+        <!-- Logo Principal junto al menu de navegacion -->
+        <header>
+            <div class="logo__main">
             <img src="IMG/logo.png" alt="Placeholder de logo" width="75" height="75">
-            <h2 style="color: white;">Luis Perez</h2>
-        </div>
+            <h2>Luis Perez</h2>
+            </div>
 
-        <h1 style="text-align: center; color: white;">Bienvenido a mi portafolio!</h1>
-
+        <nav class="logo__nav" style="color: white;"> <!-- La primera mitad es para el menu desplegable para celular -->
         
-        <header class="navhead">
-            <img src="IMG/nav1.png" alt="Imagen del Sonic(2)" width="166" height="200">
-            <nav style="color: white;">
-            <ul>
+            <input type="checkbox" id="nav__check" class="nav__check">
+
+            <label for="nav__check" class="nav__desp">
+                <img src="IMG/navicono.png" alt="iconito" width="50" height="50" class="nav__img">
+            </label>
+            <ul class="nav__opciones">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#sobremi">Sobre mi</a></li>
                 <li><a href="#servicio">Servicios</a></li>
@@ -34,23 +35,77 @@
                 <li><a href="#contacta">Contactame</a></li>              
                 <li><a href="#redes">Redes Sociales</a></li> 
             </ul>
-            </nav>
-         </header>
+        </nav>
+        </header>
+        
+        
+        
+        
 
-         <div style="text-align: center; background-color: rgba(255, 61, 2, 0.443);" >
-            <h1 style="color: aqua; text-shadow: 2px 2px 2px black ; margin-left: 10px;">Luis Perez</h1>
+        <h1 class="bienvenida" style="text-align: center; color: white;">Bienvenido a mi portafolio!</h1>
+
+        <!-- Introduccion -->
+         <div class="intro">
+            <h1>Luis Perez</h1>
             <img src="IMG/perfil.png" alt="Placeholder de perfil" width="250" height="220">
-            <p style=" color: white;">Hola! Te doy la bienvenida a mi portafolio. Te digo ya que realmente no hay mucho que mirar, pero que igual no pierdes nada intentandolo.</p>
+            <p>Hola! Te doy la bienvenida a mi portafolio. Te digo ya que realmente no hay mucho que mirar, pero que igual no pierdes nada intentandolo.</p>
          </div>
-         
+
+          <section class="slider">
+            <div class="slider__wrapper">
+                <div class="slider__slid">
+                    <img id="slid__1" src="IMG/img1.png" alt="tenita">
+                    <img id="slid__2" src="IMG/img2.png" alt="tenita">
+                    <img id="slid__3" src="IMG/img3.png" alt="tenita">
+                    <img id="slid__4" src="IMG/img4.jpeg" alt="tenita">
+                    <img id="slid__5" src="IMG/teto.gif" alt="tenita">
+                    <img id="slid__6" src="IMG/img5.jpeg" alt="tenita">
+                    <img id="slid__7" src="IMG/tenna.gif" alt="tenita">
+                    <img id="slid__8" src="IMG/tenna.gif" alt="tenita">
+                    <img id="slid__9" src="IMG/tenna.gif" alt="tenita">
+                    <img id="slid__10" src="IMG/tenna.gif" alt="tenita">
+                    <img id="slid__11" src="IMG/tenna.gif" alt="tenita">
+                    <img id="slid__12" src="IMG/tenna.gif" alt="tenita">
+                    <img id="slid__13" src="IMG/tenna.gif" alt="tenita">
+                    <img id="slid__14" src="IMG/tenna.gif" alt="tenita">
+                    <img id="slid__15" src="IMG/tenna.gif" alt="tenita">
+                    <img id="slid__16" src="IMG/tenna.gif" alt="tenita">
+                </div>
+                <div class="slider__nav">
+                    <a href="#slid__1"></a>
+                    <a href="#slid__2"></a>
+                    <a href="#slid__3"></a>
+                    <a href="#slid__4"></a>
+                    <a href="#slid__5"></a>
+                    <a href="#slid__6"></a>
+                    <a href="#slid__7"></a>
+                    <a href="#slid__8"></a>
+                    <a href="#slid__9"></a>
+                    <a href="#slid__10"></a>
+                    <a href="#slid__11"></a>
+                    <a href="#slid__12"></a>
+                    <a href="#slid__13"></a>
+                    <a href="#slid__14"></a>
+                    <a href="#slid__15"></a>
+                    <a href="#slid__16"></a>
+                </div>
+            </div>
+
+         </section>
 
          <div style="background-color: rgba(255, 61, 2, 0.443);">
+            <!-- Cosas sobre mi persona -->
             <h2 id="sobremi" style="color: rgb(117, 239, 255); text-shadow: 2px 2px 2px black ; margin-left: 10px;" class="Mini-Titulo">Sobre mi:</h2>
             <p style="color: white; margin-left: 10px;">Soy estudiante de Informatica y fan de los videojuegos. Realmente no hay mucho que decir, simplemente hago lo que me gusta y ya. A veces me dedico al modding del fangame Sonic 3 A.I.R</p>
 
+            <h2 style="color: rgb(117, 239, 255); text-shadow: 2px 2px 2px black ; margin-left: 10px;" class="Mini-Titulo">Pasatiempos:</h2>
+            <p style="color: white; margin-left: 10px;">Pues usualmente me la paso jugando videojuegos cuando no tengo nada que hacer, tambien hago dibujos o pixel art(de forma MUY ocasional)</p>
+
+            <!-- Servicios que doy -->
             <h2 id="servicio" style="color: rgb(117, 239, 255); text-shadow: 2px 2px 2px black ; margin-left: 10px;" class="Mini-Titulo">Servicios:</h2>
             <p style="color: white; margin-left: 10px;">No doy ningun servicio de momento.</p>
 
+            <!-- Portafolio -->
             <h2 id="portafolio" style="color: rgb(117, 239, 255); text-shadow: 2px 2px 2px black ; margin-left: 10px;" class="Mini-Titulo">Portafolio:</h2>
             <p style="color: white; margin-left: 10px;">Siendo sincero, lo mejor que he logrado programar han sido algunos mods del previamente mencionado Sonic 3 A.I.R. Algunos que podria mencionar serian...</p>
             <div style="text-align: center;">
@@ -60,19 +115,21 @@
             </div>
             <p style="color: white; margin-left: 10px;">Actualmente me encuentro estudiando para mejorar mis habilidades como programador, y ser capaz de crear nuevos proyectos, los cuales sean de mi gusto.</p>
 
+            <!-- Aqui van los testimonios, como no hay ninguno simplemente queda este texto como placeholder -->
             <h2 id="testimonio" style="color: rgb(117, 239, 255); text-shadow: 2px 2px 2px black ; margin-left: 10px;" class="Mini-Titulo">Testimonios:</h2>
             <p style="color: white; margin-left: 10px;">Miami me lo confirmo :v</p>
 
+            <!-- Aqui van las formas donde se me puede contactar -->
             <h2 id="contacta" style="color: rgb(117, 239, 255); text-shadow: 2px 2px 2px black ; margin-left: 10px;" class="Mini-Titulo">Contactame:</h2>
 
             <div class="contacto">
              <div class="contacto__gmail">
                 <a href="mailto:luis.angelpkorins@://gmail.com"><img src="IMG/gmail.webp" alt="Icono Gmail" width="100" height="89"></a>
-                <p>Texto para pc: luis.angelpkorins@gmail.com</p>
+                <p>luis.angelpkorins@gmail.com</p>
             </div>
             <div class="contacto__outlook">
                 <a href="mailto:luispkorins@outlook.com"><img src="IMG/outlook.webp" alt="Icono Outlook" width="100" height="89"></a>
-                <p>Texto para pc: luispkorins@outlook.com</p>
+                <p>luispkorins@outlook.com</p>
             </div>
             </div>
 
@@ -96,7 +153,10 @@
 
 
     </body>
-    <footer style="background-color: rgba(255, 13, 0, 0.443); color: white;">
-       <h3>&copy;2026, Este sitio web es propiedad de Luis Perez. v1.1</h3>
+    <footer>
+
+    
+            <img class="footer__img" src="IMG/nav1.png" alt="copy sonic" width="80" height="100">
+            <h3 class="footer__copy">&copy;2026, Este sitio web es propiedad de Luis Perez. v1.1</h3>    
     </footer>
 </html>
